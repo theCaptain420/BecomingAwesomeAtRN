@@ -6,7 +6,7 @@ const initialState = {
     loadingState: LOADING_DATA
 }
 
-export const reducer = (state = initialState, action) => {
+export const welcomeReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOADING_DATA:
             return {
