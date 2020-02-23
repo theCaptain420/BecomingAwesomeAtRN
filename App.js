@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import WelcomePage from './src/frontpage/WelcomePage'
+import LoadingPage from './src/frontpage/LoadingPage'
 
 class App extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <View>
-        <WelcomePage/>
+        <LoadingPage/>
       </View>
     );
   }
