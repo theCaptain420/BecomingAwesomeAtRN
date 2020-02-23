@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { LOADING_DATA, SUCCESS_LOADING_DATA, FAILED_LOADING_DATA }  from './frontRedux/frontTypes'
 
-import getAppData from './logic/getAppData'
 
 export default () => {
     const dispatch = useDispatch()
@@ -12,7 +11,7 @@ export default () => {
 
     return(
         <View>
-            <Text onPress={()=>getAppData()}>
+            <Text>
                 TSM {datamessage}
             </Text>
         </View>

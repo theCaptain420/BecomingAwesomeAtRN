@@ -8,6 +8,6 @@ let promise = new Promise((resolve, reject) => {
 
 let result = await promise;
 
-return result;
+return [SUCCESS_LOADING_DATA, result];
 
 }
