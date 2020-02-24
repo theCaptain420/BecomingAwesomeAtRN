@@ -9,7 +9,7 @@ export default () => {
     const dispatch = useDispatch();
     const appState = useSelector(state => state.loadingState);
 
-    //on state change
+    //useEffect = runs on state change
     useEffect(()=>{
         randomFunc()
     })
