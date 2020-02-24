@@ -9,18 +9,20 @@ export default () => {
     const dispatch = useDispatch();
     const appState = useSelector(state => state.loadingState);
 
+    //on state change
     useEffect(()=>{
+        randomFunc()
     })
 
-    const randomFunc=()=>{
-        const tsm = getAppData();
-        useDispatch({type:tsm[0],data:tsm[1]})
+    const randomFunc=()=>{        
+        getAppData().then((state)=> {
+            dispatch({type:state[0], data:state[1]})
+        })
     }
 
 
     return (
         <View>
-            <Text onPress={()=> randomFunc()}>Load me data</Text>
             <WhatToShow />
         </View>
     )

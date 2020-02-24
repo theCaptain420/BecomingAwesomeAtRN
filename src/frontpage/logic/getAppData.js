@@ -1,13 +1,10 @@
-import { LOADING_DATA, SUCCESS_LOADING_DATA, FAILED_LOADING_DATA }  from './../frontRedux/frontTypes'
+import { LOADING_DATA, SUCCESS_LOADING_DATA, FAILED_LOADING_DATA } from './../frontRedux/frontTypes'
 
-export default async function(){
-//should return data and loading state..
-let promise = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("done!"), 1000)
+export default function () {
+  return new Promise((resolve, reject) => {
+    setTimeout(function () {
+      resolve([SUCCESS_LOADING_DATA, "tsmlols"])   // Yay! Everything went well!
+    }, 1000)
   });
-
-let result = await promise;
-
-return [SUCCESS_LOADING_DATA, result];
 
 }
