@@ -13,7 +13,7 @@ export default () => {
         <View>
             <Text>
                 Success page  
-                TSM {datamessage}
+                TSM {datamessage[1]}
             </Text>
         </View>
     )
