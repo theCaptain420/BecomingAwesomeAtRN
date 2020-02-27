@@ -24,7 +24,7 @@ export const welcomeReducer = (state = initialState, action) => {
             return {
                 ...state,
                 loadingState: FAILED_LOADING_DATA,
-                errorMessage: action.errorMessage
+                errorMessage: action.data
             }
         default:
             return state

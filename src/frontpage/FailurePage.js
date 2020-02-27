@@ -1,11 +1,15 @@
 import { View, Text } from "react-native"
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux'
+
 
 export default () => {
+    const errorMessage = useSelector(state => state.errorMessage)
+
     return(
         <View>
             <Text>
-                Sadly the application failed getting the data due to: {this.props.errorMessage}
+                Sadly the application failed getting the data due to: - {errorMessage.toString()} -
             </Text>
         </View>
     )
