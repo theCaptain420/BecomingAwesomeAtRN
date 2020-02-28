@@ -4,7 +4,7 @@ The Application will be able to fetch from a hacker news API.
 ### Awesome stuff in this app already:  
 | Functions | notes |
 |:---:|:---:|
-| Fetch | Getting data from Story API |  
+| Fetch | Getting data from Story API, using async, promises and await |  
 | Redux | It's being impleted everywhere, so end result isnt here yet :D |  
 | Redux hooks | And i love it <3 |  
 
@@ -13,4 +13,5 @@ The Application will be able to fetch from a hacker news API.
 |:---:|:---:|
 | TypeScript | :3 |  
 | Native module | :3 |  
+| Making it look dope | :3 |  
 
