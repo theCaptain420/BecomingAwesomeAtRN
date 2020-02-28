@@ -11,10 +11,10 @@ export default () => {
 
     //useEffect = runs on state change
     useEffect(()=>{
-        randomFunc()
+        setAppData()
     })
 
-    const randomFunc=()=>{        
+    const setAppData=()=>{        
         getAppData().then((state)=> {
             dispatch({type:state[0], data:state[1]})
         })
