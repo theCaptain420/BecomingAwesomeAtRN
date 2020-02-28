@@ -7,7 +7,6 @@ const initialState = {
 }
 
 export const welcomeReducer = (state = initialState, action) => {
-    console.log("its being run")
     switch (action.type) {
         case LOADING_DATA:
             return {

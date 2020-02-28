@@ -6,13 +6,13 @@ import { useDispatch, useSelector } from 'react-redux'
 
 export default () => {
     const dispatch = useDispatch()
-    const datamessage = useSelector(state => state.data)
+    const articleList = useSelector(state => state.data)
 
     return(
         <View>
             <Text>
                 Success page  
-                TSM {datamessage[1]}
+                TSM {articleList[0].by}
             </Text>
         </View>
     )

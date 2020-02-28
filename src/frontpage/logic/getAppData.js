@@ -3,14 +3,22 @@ import { LOADING_DATA, SUCCESS_LOADING_DATA, FAILED_LOADING_DATA } from './../fr
 export default async function () {
   try {
     const retrievedItem = await fetch("https://hacker-news.firebaseio.com/v0/newstories.json");
-    const items = await retrievedItem.json()
-    return Promise.resolve([SUCCESS_LOADING_DATA, items]);
+    const allItems = await retrievedItem.json()
+    const cutDownItems = await getAmountOfArticleNumbers(allItems,10,1);
+    const finalArticles = await getArticles(cutDownItems);
+    return Promise.resolve([SUCCESS_LOADING_DATA, finalArticles]);
   } catch (error) {
     return Promise.reject([FAILED_LOADING_DATA, error])
   }
 }
 
-function getArticles(){
+async function getArticles(itemArray){
+  const articles = await Promise.all(itemArray.map(id =>
+    fetch('https://hacker-news.firebaseio.com/v0/item/' + id + '.json').then(resp => resp.json())
+  )).then(values => values)
+  
+ return articles;
+
 
 }
 
