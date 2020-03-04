@@ -3,11 +3,13 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     newsBackground: {
         backgroundColor:"#F7F7F7",
+        width:"90%", 
+       
     },
     newsElementTitle: {
         color:"#595959",
         fontWeight:"bold",
-        fontSize:15,
+        fontSize:20,
         margin:10
     },
     newsElementURL: {
@@ -24,10 +26,10 @@ export default StyleSheet.create({
         fontSize:10,
         margin:10
     },
-    seperatorLine: {
-        backgroundColor:"lightgrey",
+    newsSeperatorLine: {
+        backgroundColor:"darkgray",
         height:1,
-        width: "90%",
+        width: "100%",
         alignSelf:"center"
     }
 });
