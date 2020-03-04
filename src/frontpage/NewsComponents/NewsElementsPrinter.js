@@ -1,6 +1,6 @@
 import { View, Text } from "react-native"
 import React from 'react';
-
+import styles from './newsStyle'
 
 
 export default (props) => {
@@ -9,10 +9,10 @@ export default (props) => {
             {props.items.map(item => {
                 return(
                     <View key={item.id}>
-                        <Text>
+                        <Text style={styles.newsElementTitle}>
                             {item.title}
                         </Text>
-                        <View />
+                        <View style={styles.seperatorLine}/>
                     </View>
                 )
             })}
