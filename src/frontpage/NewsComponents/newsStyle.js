@@ -4,7 +4,7 @@ export default StyleSheet.create({
     newsBackground: {
         backgroundColor:"#F7F7F7",
         width:"90%", 
-       
+       alignSelf:"center"
     },
     newsElementTitle: {
         color:"#595959",
