@@ -11,8 +11,6 @@ export default (props) => {
                     <View key={item.id} style={styles.newsBackground}>
                         <Text style={styles.newsElementTitle}>
                             {item.title}
-                            {item.title}
-
                         </Text>
                         <View style={styles.newsSeperatorLine}/>
                     </View>
