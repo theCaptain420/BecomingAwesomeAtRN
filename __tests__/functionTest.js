@@ -4,3 +4,5 @@ test('Tjekker om den returnere det rigtige url type', ()=>{
     let correctResult = "twitter.com"
     expect(getNewsSiteUrlToShow(fakeUrl)).toStrictEqual(correctResult)
 })
+
+//Run with npm test

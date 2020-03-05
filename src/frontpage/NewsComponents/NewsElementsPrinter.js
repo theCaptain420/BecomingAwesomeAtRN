@@ -1,7 +1,7 @@
 import { View, Text, ScrollView } from "react-native"
 import React from 'react';
 import styles from './newsStyle'
-
+import getNewSiteUrlToShow from './getNewsSiteUrlToShow'
 
 export default (props) => {
     return(
@@ -12,6 +12,11 @@ export default (props) => {
                         <Text style={styles.newsElementTitle}>
                             {item.title}
                         </Text>
+
+                        <Text>
+                            Article on: {getNewSiteUrlToShow("tsm")}
+                        </Text>
+
                         <View style={styles.newsSeperatorLine}/>
                     </View>
                 )
