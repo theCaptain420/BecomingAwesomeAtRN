@@ -14,7 +14,8 @@ export default (props) => {
                         </Text>
 
                         <Text>
-                            Article on: {getNewSiteUrlToShow("tsm")}
+                            
+                            Article on: {getNewSiteUrlToShow(item.url)}
                         </Text>
 
                         <View style={styles.newsSeperatorLine}/>

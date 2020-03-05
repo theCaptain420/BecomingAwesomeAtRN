@@ -1,3 +1,3 @@
-export default function (URL) {
+export default function (URLstring) {
     
 }
