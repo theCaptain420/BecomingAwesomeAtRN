@@ -9,13 +9,15 @@ export default () => {
     const dispatch = useDispatch()
     const articleList = useSelector(state => state.data)
 
-    return(
+    return (
         <View style={styles.background}>
-            <Text style={styles.mainHeader}>
-                Awesome APP  
+            <View>
+                <Text style={styles.mainHeader}>
+                    Awesome APP
             </Text>
-            <View style={[styles.seperatorLine,{width: "95%",}]}></View>
-            <NewsElementsPrinter items={articleList}/> 
+                <View style={[styles.seperatorLine, { width: "95%", }]}></View>
+            </View>
+            <NewsElementsPrinter items={articleList}  />
         </View>
     )
 }
