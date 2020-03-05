@@ -11,13 +11,11 @@ export default () => {
 
     return (
         <View style={styles.background}>
-            <View>
-                <Text style={styles.mainHeader}>
-                    Awesome APP
+            <Text style={styles.mainHeader}>
+                Awesome APP
             </Text>
-                <View style={[styles.seperatorLine, { width: "95%", }]}></View>
-            </View>
-            <NewsElementsPrinter items={articleList}  />
+            <View style={[styles.seperatorLine, { width: "95%", }]}></View>
+            <NewsElementsPrinter items={articleList} />
         </View>
     )
 }
