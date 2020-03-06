@@ -7,6 +7,7 @@ The Application will be able to fetch from a hacker news API.
 | Fetch | Getting data from Story API, using async, promises and await |  
 | Redux | It's being impleted everywhere, so end result isnt here yet :D |  
 | Redux hooks | And i love it <3 |  
+| Jest tests | will be implemented on future modules aswell. |  
 
 ### Awesome stuff that needs to be added:  
 | Functions | notes |
