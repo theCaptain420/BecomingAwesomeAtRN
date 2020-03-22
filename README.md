@@ -16,3 +16,4 @@ The Application will be able to fetch from a hacker news API.
 | Native module | :3 |  
 | Making it look dope | :3 |  
 | More tests!! | :3 |  
+| Metaweather api!! | Show me da weather |  
