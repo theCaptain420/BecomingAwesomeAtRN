@@ -17,3 +17,5 @@ The Application will be able to fetch from a hacker news API.
 | Making it look dope | :3 |  
 | More tests!! | :3 |  
 | Metaweather api!! | Show me da weather |  
+| Implement activityindecator!! | Works like loading screen |  
+
