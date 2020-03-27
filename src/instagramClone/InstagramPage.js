@@ -1,16 +1,14 @@
 import { View, Text } from "react-native"
 import React from 'react';
-import styles from './frontPageStyle';
 
 
-export default () => {
+export default ({navigation}) => {
 
     return (
-        <View style={styles.background}>
-            <Text style={styles.mainHeader}>
+        <View>
+            <Text onPress={() => navigation.navigate('HackerNews')}>
                 Instagram
             </Text>
-            <View style={[styles.seperatorLine, { width: "95%", }]}></View>
         </View>
     )
 }
