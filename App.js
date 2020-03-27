@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LoadingPage from './src/frontpage/LoadingPage'
 import { NavigationContainer } from '@react-navigation/native';
-import { NavigaionPage } from './src/navigation/NavigationPage';
+import  NavigaionPage from './src/navigation/NavigationPage';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import InstagramPage from './src/instagramClone/InstagramPage'
@@ -25,19 +25,21 @@ class App extends Component {
   render() {
     return (
       <NavigationContainer>
-        <Stack.Navigator>
-          
+        <Stack.Navigator screenOptions={{
+          headerShown: false
+        }}>
+          <Stack.Screen
+            name="Navigation"
+            component={NavigaionPage}
+          />
           <Stack.Screen
             name="Instagram"
             component={InstagramPage}
-            options={{ title: 'Instagram' }}
           />
           <Stack.Screen
             name="HackerNews"
             component={LoadingPage}
-            options={{ title: 'Hacker News' }}
           />
-
         </Stack.Navigator>
       </NavigationContainer>
     )

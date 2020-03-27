@@ -6,7 +6,7 @@ export default ({navigation}) => {
 
     return (
         <View>
-            <Text onPress={() => navigation.navigate('HackerNews')}>
+            <Text>
                 Instagram
             </Text>
         </View>

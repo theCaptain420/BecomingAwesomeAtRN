@@ -1,16 +1,16 @@
 import { View, Text } from "react-native"
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {InstagramPage} from '../instagramClone/InstagramPage'
 
-const Stack = createStackNavigator();
 
-export default () => {
+export default ({navigation}) => {
 
     return (
           <View>
-            <Text >
-            TSM
+            <Text onPress={() => navigation.navigate('Instagram')} >
+            Instagram
+            </Text>
+            <Text onPress={() => navigation.navigate('HackerNews')} >
+            HackerNews
             </Text>
           </View>
         
