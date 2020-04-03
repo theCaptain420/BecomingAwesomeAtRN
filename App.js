@@ -14,28 +14,21 @@ class App extends Component {
     super(props);
   }
 
-  /*render() {
-    return (
-      <View>
-        <LoadingPage/>
-      </View>
-    );
-  }*/
-
   render() {
     return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{
           headerShown: false
         }}>
+        <Stack.Screen
+        name="Instagram"
+        component={InstagramPage}
+      />
           <Stack.Screen
             name="Navigation"
             component={NavigaionPage}
           />
-          <Stack.Screen
-            name="Instagram"
-            component={InstagramPage}
-          />
+         
           <Stack.Screen
             name="HackerNews"
             component={LoadingPage}
