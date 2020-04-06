@@ -1,4 +1,4 @@
-import { View, Text } from "react-native"
+import { View, StyleSheet } from "react-native"
 import React from 'react';
 import InstaPrinter from './instaPrinter'
 import AppHeader from '../themeComponents/AppHeader'
@@ -11,9 +11,16 @@ export default ({navigation}) => {
     ]
 
     return (
-        <View>
+        <View style={styles.background}>
             <AppHeader title="Instagram"/>
             <InstaPrinter items={instaPosts}/>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    background: {
+        backgroundColor:"#F7F7F7",
+        justifyContent: "space-evenly"
+    }
+})
