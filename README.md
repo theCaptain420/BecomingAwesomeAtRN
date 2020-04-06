@@ -12,7 +12,9 @@ The Application will be able to fetch from a hacker news API.
 
 ### Awesome stuff that needs to be added:  
 | Functions | notes |
-|:---:|:---:|
+|:---:|:---:|  
+| Instagram posts  | implement so i can make my own posts |  
+| Instagram looks  | Make instagram look cooler |  
 | TypeScript | :3 |  
 | Native module | :3 |  
 | Making it look dope | :3 |  
