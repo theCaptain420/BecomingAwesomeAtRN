@@ -5,7 +5,7 @@ import { Dimensions } from 'react-native'
 
 export default (props) => {
     return(
-        <View style={{flex:1, marginVertical:30}}>
+        <View style={{flex:1, marginVertical:0}}>
             <Image style={styles.instaImage} source={{uri:props.imageURI}}/>
         </View>
     )
