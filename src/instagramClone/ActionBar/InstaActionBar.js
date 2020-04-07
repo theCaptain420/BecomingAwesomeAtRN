@@ -6,7 +6,7 @@ export default (props) => {
     return(
         <View >
             <Text style={styles.mainFooter}>
-                Owned by @theCaptain420
+                Something
             </Text>
         </View>
     )

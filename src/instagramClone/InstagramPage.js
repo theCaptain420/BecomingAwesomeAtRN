@@ -12,7 +12,7 @@ export default ({navigation}) => {
 
     return (
         <View style={styles.background}>
-            <AppHeader title="Instagram"/>
+            <AppHeader title="InstaPage"/>
             <InstaPrinter items={instaPosts}/>
         </View>
     )
