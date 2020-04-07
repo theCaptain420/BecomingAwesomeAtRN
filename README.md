@@ -21,4 +21,8 @@ The Application will be able to fetch from a hacker news API.
 | More tests!! | :3 |  
 | Metaweather api!! | Show me da weather |  
 | Implement activityindecator!! | Works like loading screen |  
+  
+  
+Link to color pattern:  
+https://hihayk.github.io/scale/#4/6/50/80/-51/67/20/14/00BCD4/0/188/212
 
