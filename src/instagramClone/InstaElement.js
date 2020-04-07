@@ -6,7 +6,7 @@ import InstaPicture from './InstaPicture'
 export default (props) => {
     return(
         <View style={{flex:1, flexDirection:"column"}}>
-            <InstaUser fullName={props.fullName} shortName={props.shortName} pfpColor={props.pfpColor} pfpSize={35}/>
+            <InstaUser fullName={props.fullName} shortName={props.shortName} pfpColor={props.pfpColor} pfpSize={20}/>
             <InstaPicture imageURI={props.imageURI}/>
         </View>
     )

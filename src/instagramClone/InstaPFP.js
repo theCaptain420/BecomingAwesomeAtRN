@@ -11,11 +11,13 @@ export default (props) => {
             width:props.size,
             height:props.size,
             justifyContent: 'center',
-            alignItems:"center"
+            alignItems:"center",
+            justifyContent:"center",
         },
         pfpText:{
             fontWeight:"bold",
-            color:"white"
+            color:"white",
+            fontSize:props.size/3
         }
     })
 
