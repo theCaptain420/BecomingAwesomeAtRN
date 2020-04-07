@@ -18,5 +18,10 @@ const styles = StyleSheet.create({
         fontWeight:"bold",
         fontSize:10,
         margin:10
+    },
+    backgroundFooter:{
+        backgroundColor:"lightgrey",
+        borderTopLeftRadius:5,
+        borderTopRightRadius:5
     }
 })

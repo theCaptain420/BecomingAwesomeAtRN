@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
         margin: 10,
     },
     headerBackground: {
-        backgroundColor: "#66ECAD"
+        backgroundColor: "#66ECAD",
+       
     },
     seperatorLine: {
         backgroundColor: "lightgrey",
