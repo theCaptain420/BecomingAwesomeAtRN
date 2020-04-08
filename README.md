@@ -21,6 +21,8 @@ The Application will be able to fetch from a hacker news API.
 | More tests!! | :3 |  
 | Metaweather api!! | Show me da weather |  
 | Implement activityindecator!! | Works like loading screen |  
+| Implement activityindecator on images  component | Loading images indicator |  
+| Blueprint | :3 |  
   
   
 Link to color pattern:  
