@@ -8,7 +8,7 @@ export default (props) => {
 
 
     return(
-        <View style={{flex:1, marginVertical:0}}>
+        <View style={{flex:1}}>
         {loading &&(
             <ActivityIndicator size={"large"}/>
         )}
@@ -21,5 +21,10 @@ const styles = StyleSheet.create({
     instaImage:{
         width:"100%",
         height:Dimensions.get('window').width,
+    },
+    acIndicator:{
+        justifyContent:"space-around",
+        padding:10,
+
     }
 })
