@@ -2,6 +2,7 @@ import { View, Text, ScrollView } from "react-native"
 import React from 'react';
 import styles from './newsStyle'
 import getNewSiteUrlToShow from './getNewsSiteUrlToShow'
+import AppFooter from '../../themeComponents/AppFooter'
 
 export default (props) => {
     return(
@@ -22,6 +23,7 @@ export default (props) => {
                     </View>
                 )
             })}
+            <AppFooter/>
         </ScrollView>
     )
 }

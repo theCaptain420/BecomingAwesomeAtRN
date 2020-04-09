@@ -3,7 +3,6 @@ import React from 'react';
 
 
 export default ({navigation}) => {
-
     return (
           <View>
             <Text onPress={() => navigation.navigate('Instagram')} >
@@ -13,6 +12,5 @@ export default ({navigation}) => {
             HackerNews
             </Text>
           </View>
-        
     )
 }
