@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import React, {useEffect} from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import WhatToShow from './WhatToShow'
 import getAppData from './logic/getAppData'
 
