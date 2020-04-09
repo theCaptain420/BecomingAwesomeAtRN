@@ -9,9 +9,7 @@ export default (props) => {
 
     return(
         <View style={{flex:1, marginVertical:0}}>
-        {loading &&(
-            <ActivityIndicator size={"large"}/>
-        )}
+         
             <Image style={styles.instaImage} source={{uri:props.imageURI}} onLoad={()=>{setLoading(false)}} />
             
         </View>
