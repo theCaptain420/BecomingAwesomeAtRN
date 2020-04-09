@@ -20,16 +20,16 @@ class App extends Component {
         <Stack.Navigator screenOptions={{
           headerShown: false
         }}>
-        <Stack.Screen
-        name="Instagram"
-        component={InstagramPage}
-      />
+        
         <Stack.Screen
             name="Navigation"
             component={NavigaionPage}
           />
         
-          
+          <Stack.Screen
+        name="Instagram"
+        component={InstagramPage}
+      />
          
           <Stack.Screen
             name="HackerNews"

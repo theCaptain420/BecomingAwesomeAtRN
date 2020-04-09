@@ -1,7 +1,7 @@
 import { LOADING_DATA, SUCCESS_LOADING_DATA, FAILED_LOADING_DATA } from './frontRedux/frontTypes'
 import WelcomePage from './WelcomePage';
 import FailurePage from './FailurePage';
-import { Text } from "react-native"
+import { Text, ActivityIndicator,View } from "react-native"
 import React from 'react';
 import { useSelector } from 'react-redux'
 
@@ -11,9 +11,12 @@ export default () => {
 
     if (appState == LOADING_DATA) {
         return (
-            <Text>
-                Loading....
+            <View style={{flexDirection:"row", justifyContent:"center"}}>
+                <Text>
+                    Loading....
             </Text>
+                <ActivityIndicator size={"small"} />
+            </View>
         )
     } else if (appState == SUCCESS_LOADING_DATA) {
         return (
