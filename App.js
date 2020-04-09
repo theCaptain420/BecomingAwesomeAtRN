@@ -24,10 +24,12 @@ class App extends Component {
         name="Instagram"
         component={InstagramPage}
       />
-          <Stack.Screen
+        <Stack.Screen
             name="Navigation"
             component={NavigaionPage}
           />
+        
+          
          
           <Stack.Screen
             name="HackerNews"
