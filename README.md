@@ -11,6 +11,7 @@ The Application will be able to fetch from a hacker news API.
 | Instagram copy  | A sweet instagram copy to show posts and pictures like instagram |  
 | Implement activityindecator!! | Works like loading screen |  
 | Implement activityindecator on images  component | Loading images indicator |  
+| React Navigation! | Move around different "pages" |  
 
 ### Awesome stuff that needs to be added:  
 | Functions | notes |
