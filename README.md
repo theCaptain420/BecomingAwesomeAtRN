@@ -20,8 +20,8 @@ The Application will be able to fetch from a hacker news API.
 | TypeScript | :3 |  
 | Native module | :3 |  
 | Making it look dope | :3 |  
-| More tests!! | :3 |  
-| Metaweather api!! | Show me da weather |  
+| More tests! | :3 |  
+| Metaweather api! | Show me da weather |  
 | Blueprint for functional components | :3 |  
   
   
