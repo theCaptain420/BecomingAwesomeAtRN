@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 
 export default () => {
-    const errorMessage = useSelector(state => state.errorMessage)
+    const errorMessage = useSelector(state => state.welcome.errorMessage)
 
     return(
         <View>
