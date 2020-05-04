@@ -7,8 +7,12 @@ import getAppWeather from './getWeather'
 export default ({navigation}) => {
 
     useEffect(()=>{
-        getAppWeather();
+        setAppWeather();
     })
+
+    const setAppWeather=()=>{
+        getAppWeather()
+    }
 
 
     return (
