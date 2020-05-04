@@ -1,9 +1,15 @@
 import {welcomeReducer} from './../frontpage/frontRedux/frontReducers';
-import {createStore} from 'redux'
+import {weatherReducer} from './../weatherMod/wRedux/wReducer'
+import {createStore, combineReducers} from 'redux'
 
 export default function configureStore(){
+    rootReducer = combineReducers({
+        welcome: welcomeReducer,
+        weather: weatherReducer
+    })
+
     let store = createStore(
-        welcomeReducer
+        rootReducer
     )
     return store;
 }
