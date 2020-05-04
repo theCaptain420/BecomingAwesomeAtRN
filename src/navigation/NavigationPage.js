@@ -2,14 +2,13 @@ import { View, Text } from "react-native"
 import React from 'react';
 import styles from './NavigationPageStyle'
 import AppStatusBar from '../themeComponents/AppStatusBar'
+import WeatherView from './../weatherMod/WeatherView'
 
 export default ({navigation}) => {
     return (
           <View style={styles.navBackground}>
             <AppStatusBar/>
-            <Text>
-              Weather
-            </Text>
+            <WeatherView/>
             <Text onPress={() => navigation.navigate('Instagram')} style={styles.navHeader} >
             Instagram
             </Text>
