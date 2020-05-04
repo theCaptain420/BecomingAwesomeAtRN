@@ -1,10 +1,15 @@
 import { View, Text } from "react-native"
-import React from 'react';
+import React,{useEffect} from 'react';
 import styles from './WeatherViewStyle'
+import { useDispatch, useSelector } from 'react-redux'
+import getAppWeather from './getWeather'
 
 export default ({navigation}) => {
 
-    
+    useEffect(()=>{
+        getAppWeather();
+    })
+
 
     return (
           <View style={styles.navBackground}>
