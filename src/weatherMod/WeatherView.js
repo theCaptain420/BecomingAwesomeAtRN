@@ -5,20 +5,26 @@ import { useDispatch, useSelector } from 'react-redux'
 import getAppWeather from './getWeather'
 
 export default ({navigation}) => {
+    const dispatch = useDispatch();
+    const temperature = useSelector(state => state.weather.temperature);
+
 
     useEffect(()=>{
         setAppWeather();
     })
 
     const setAppWeather=()=>{
-        getAppWeather()
+        getAppWeather().then((data)=>{
+            console.log(data[0],data[1])
+            dispatch({type:data[0],temperature:data[1]})
+        })
     }
 
 
     return (
           <View style={styles.navBackground}>
             <Text>
-                The weather today
+                The weather today is {temperature} degrees
             </Text>
           </View>
     )
