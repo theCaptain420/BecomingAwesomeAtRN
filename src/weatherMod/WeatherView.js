@@ -15,7 +15,6 @@ export default ({navigation}) => {
 
     const setAppWeather=()=>{
         getAppWeather().then((data)=>{
-            console.log(data[0],data[1])
             dispatch({type:data[0],temperature:data[1]})
         })
     }
