@@ -6,7 +6,7 @@ import NewsElementsPrinter from './NewsComponents/NewsElementsPrinter'
 import AppHeader from '../themeComponents/AppHeader'
 
 export default () => {
-    const articleList = useSelector(state => state.data)
+    const articleList = useSelector(state => state.welcome.data)
 
     return (
         <View style={styles.background}>
