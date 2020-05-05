@@ -14,7 +14,6 @@ export const weatherReducer = (state = initialState, action) => {
                 loadingState: LOADING_WEATHER_DATA
             }
         case SUCCESS_WEATHER_LOADING_DATA:
-            console.log("do we get here?")
             return {
                 ...state,
                 loadingState: SUCCESS_WEATHER_LOADING_DATA,
