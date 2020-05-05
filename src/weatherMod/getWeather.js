@@ -6,8 +6,8 @@ export default async function getAppWeather(){
         let responseTemp = await fetch("https://www.metaweather.com/api/location/554890/").then(resp => resp.json()).then(respJson =>  respJson.consolidated_weather[0].the_temp)
         return [SUCCESS_WEATHER_LOADING_DATA, responseTemp]
     }catch(err){
-        console.error(err)
-        return [FAILED_WEATHER_LOADING_DATA, "the temperature couldn't be loaded..."]
+        console.log(err)
+        return [FAILED_WEATHER_LOADING_DATA,err]
     }
 
 }
