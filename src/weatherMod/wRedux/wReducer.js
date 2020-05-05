@@ -1,7 +1,7 @@
 import { LOADING_WEATHER_DATA,SUCCESS_WEATHER_LOADING_DATA,FAILED_WEATHER_LOADING_DATA } from './wTypes'
 
 const initialState = {
-    temperature: [],
+    temperature: "loading... ",
     errorMessage: "no errors",
     loadingState: LOADING_WEATHER_DATA
 }
