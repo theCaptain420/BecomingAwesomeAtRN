@@ -6,7 +6,7 @@ import React from 'react';
 import { useSelector } from 'react-redux'
 
 export default () => {
-    const appState = useSelector(state => state.loadingState);
+    const appState = useSelector(state => state.welcome.loadingState);
 
 
     if (appState == LOADING_DATA) {
