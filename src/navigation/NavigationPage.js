@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './NavigationPageStyle'
 import AppStatusBar from '../themeComponents/AppStatusBar'
 import WeatherView from './../weatherMod/WeatherView'
+import { Icon } from 'react-native-elements'
 
 export default ({ navigation }) => {
   return (
@@ -13,12 +14,14 @@ export default ({ navigation }) => {
         <Text  style={styles.navText} >
           Instagram
         </Text>
+        <Icon name="photo" color="white"/>    
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => navigation.navigate('HackerNews')} style={styles.navElement}>
         <Text  style={styles.navText}>
           HackerNews
         </Text>
+        <Icon name="business" color="white"/>    
       </TouchableOpacity>
       <WeatherView />
 
