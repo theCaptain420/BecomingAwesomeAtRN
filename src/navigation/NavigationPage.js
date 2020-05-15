@@ -12,16 +12,16 @@ export default ({ navigation }) => {
 
       <TouchableOpacity onPress={() => navigation.navigate('Instagram')} style={styles.navElement}>
         <Text  style={styles.navText} >
-          Instagram
+          Instagram 
         </Text>
-        <Icon name="photo" color="white"/>    
+        <Icon name="photo" color="white" style={{margin:5}}/>    
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => navigation.navigate('HackerNews')} style={styles.navElement}>
         <Text  style={styles.navText}>
-          HackerNews
+          HackerNews 
         </Text>
-        <Icon name="business" color="white"/>    
+        <Icon name="business" color="white" style={{margin:5}}/>    
       </TouchableOpacity>
       <WeatherView />
 

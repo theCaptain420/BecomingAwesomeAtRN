@@ -13,7 +13,9 @@ export default StyleSheet.create({
         alignItems:"center",
         backgroundColor:"#66ECAD",
         padding:10,
-        margin:10
+        margin:10,
+        justifyContent:"center",
+        flexDirection:"row"
     },
     navText:{
         fontSize:26,
