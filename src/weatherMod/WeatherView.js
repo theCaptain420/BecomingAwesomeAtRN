@@ -21,8 +21,8 @@ export default ({navigation}) => {
 
 
     return (
-          <View style={styles.navBackground}>
-            <Text>
+          <View >
+            <Text style={{color:"darkgray",padding:10}}>
                 The weather today is {temperature} degrees
             </Text>
           </View>
