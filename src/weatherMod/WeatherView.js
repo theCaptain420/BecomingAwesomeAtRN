@@ -1,8 +1,10 @@
 import { View, Text } from "react-native"
 import React,{useEffect} from 'react';
-import styles from './WeatherViewStyle'
 import { useDispatch, useSelector } from 'react-redux'
 import getAppWeather from './getWeather'
+
+import { Icon } from 'react-native-elements'
+
 
 export default ({navigation}) => {
     const dispatch = useDispatch();
@@ -25,6 +27,7 @@ export default ({navigation}) => {
             <Text style={{color:"darkgray",padding:10}}>
                 The weather today is {temperature} degrees
             </Text>
+            <Icon name="cloud" color="darkgray"></Icon>
           </View>
     )
 }
