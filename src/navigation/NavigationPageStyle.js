@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     navBackground: {
-        backgroundColor:"#F7F7F7",
+        backgroundColor:"white",
         justifyContent:"center",
         flex:1,
         alignItems:"center"

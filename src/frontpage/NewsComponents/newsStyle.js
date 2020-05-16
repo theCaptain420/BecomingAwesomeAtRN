@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     newsBackground: {
-        backgroundColor:"#F7F7F7",
+        backgroundColor:"white",
         width:"90%", 
        alignSelf:"center"
     },
