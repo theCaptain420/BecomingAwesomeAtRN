@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     newsBackground: {
         backgroundColor:"white",
-        width:"90%", 
+        width:"95%", 
        alignSelf:"center"
     },
     newsElementTitle: {
@@ -29,7 +29,10 @@ export default StyleSheet.create({
     newsSeperatorLine: {
         backgroundColor:"darkgray",
         height:1,
-        width: "100%",
+        width: "95%",
         alignSelf:"center"
-    }
+    },
+    newsDescText:{
+        alignSelf:"flex-end",
+        marginHorizontal:20   }
 });

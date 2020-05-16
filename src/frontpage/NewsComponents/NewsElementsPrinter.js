@@ -14,8 +14,7 @@ export default (props) => {
                             {item.title}
                         </Text>
 
-                        <Text>
-                            
+                        <Text style={styles.newsDescText}>
                             Article on: {getNewSiteUrlToShow(item.url)}
                         </Text>
 
