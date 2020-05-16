@@ -29,7 +29,7 @@ export default StyleSheet.create({
     newsSeperatorLine: {
         backgroundColor:"darkgray",
         height:1,
-        width: "95%",
+        width: "90%",
         alignSelf:"center"
     },
     newsDescText:{
