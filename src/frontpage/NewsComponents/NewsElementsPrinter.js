@@ -3,6 +3,8 @@ import React from 'react';
 import styles from './newsStyle'
 import getNewSiteUrlToShow from './getNewsSiteUrlToShow'
 import AppFooter from '../../themeComponents/AppFooter'
+import { Icon } from 'react-native-elements'
+
 
 export default (props) => {
     return(
@@ -14,10 +16,12 @@ export default (props) => {
                             {item.title}
                         </Text>
 
+                        <Icon name="arrow-forward" style={{alignSelf:"flex-end",marginHorizontal:20}}/>
+
                         <Text style={styles.newsDescText}>
                             Article on: {getNewSiteUrlToShow(item.url)}
                         </Text>
-
+                        
                         <View style={styles.newsSeperatorLine}/>
                     </TouchableOpacity>
                 )
