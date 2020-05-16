@@ -29,8 +29,9 @@ export default StyleSheet.create({
     newsSeperatorLine: {
         backgroundColor:"darkgray",
         height:1,
-        width: "90%",
-        alignSelf:"center"
+        width: "80%",
+        alignSelf:"flex-end",
+        marginRight:"5%"
     },
     newsDescText:{
         alignSelf:"flex-end",
