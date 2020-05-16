@@ -1,4 +1,4 @@
-import { View, Text, ScrollView } from "react-native"
+import { View, Text, ScrollView,TouchableOpacity, Linking } from "react-native"
 import React from 'react';
 import styles from './newsStyle'
 import getNewSiteUrlToShow from './getNewsSiteUrlToShow'
@@ -9,7 +9,7 @@ export default (props) => {
         <ScrollView style={{height:"100%"}}>
             {props.items.map(item => {
                 return(
-                    <View key={item.id} style={styles.newsBackground}>
+                    <TouchableOpacity key={item.id} style={styles.newsBackground} onPress={()=>{Linking.openURL(item.url)}}>
                         <Text style={styles.newsElementTitle}>
                             {item.title}
                         </Text>
@@ -19,7 +19,7 @@ export default (props) => {
                         </Text>
 
                         <View style={styles.newsSeperatorLine}/>
-                    </View>
+                    </TouchableOpacity>
                 )
             })}
             <AppFooter/>
