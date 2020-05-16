@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F7F7F7",
+      "justifyContent": "space-evenly",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#66ECAD",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "#595959",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "margin": 10,
+        }
+      }
+    >
+      InstaPage
+    </Text>
+  </View>
+  <RCTScrollView
+    style={
+      Object {
+        "height": "100%",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "column",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "margin": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderRadius": 10,
+                  "height": 20,
+                  "justifyContent": "center",
+                  "padding": 5,
+                  "width": 20,
+                },
+                Object {
+                  "backgroundColor": "red",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 6.666666666666667,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              JJ
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "height": 20,
+                "justifyContent": "center",
+                "padding": 5,
+                "paddingHorizontal": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 10,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              John Johnson
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <ActivityIndicator
+            animating={true}
+            color="#999999"
+            hidesWhenStopped={true}
+            size="large"
+          />
+          <Image
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://unsplash.it/id/646/600/600",
+              }
+            }
+            style={
+              Object {
+                "height": 750,
+                "width": "100%",
+              }
+            }
+          />
+        </View>
+        <View>
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#595959",
+                "fontSize": 10,
+                "fontWeight": "bold",
+                "margin": 10,
+              }
+            }
+          >
+            Something
+          </Text>
+        </View>
+        <View />
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "column",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "margin": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderRadius": 10,
+                  "height": 20,
+                  "justifyContent": "center",
+                  "padding": 5,
+                  "width": 20,
+                },
+                Object {
+                  "backgroundColor": "green",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 6.666666666666667,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              LD
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "height": 20,
+                "justifyContent": "center",
+                "padding": 5,
+                "paddingHorizontal": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 10,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Lenny Denny
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <ActivityIndicator
+            animating={true}
+            color="#999999"
+            hidesWhenStopped={true}
+            size="large"
+          />
+          <Image
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://unsplash.it/600/600",
+              }
+            }
+            style={
+              Object {
+                "height": 750,
+                "width": "100%",
+              }
+            }
+          />
+        </View>
+        <View>
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#595959",
+                "fontSize": 10,
+                "fontWeight": "bold",
+                "margin": 10,
+              }
+            }
+          >
+            Something
+          </Text>
+        </View>
+        <View />
+      </View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "column",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "margin": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "borderRadius": 10,
+                  "height": 20,
+                  "justifyContent": "center",
+                  "padding": 5,
+                  "width": 20,
+                },
+                Object {
+                  "backgroundColor": "blue",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontSize": 6.666666666666667,
+                  "fontWeight": "bold",
+                }
+              }
+            >
+              DS
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "height": 20,
+                "justifyContent": "center",
+                "padding": 5,
+                "paddingHorizontal": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 10,
+                  "fontWeight": "bold",
+                  "textAlign": "center",
+                }
+              }
+            >
+              Diana Svendson
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <ActivityIndicator
+            animating={true}
+            color="#999999"
+            hidesWhenStopped={true}
+            size="large"
+          />
+          <Image
+            onLoad={[Function]}
+            source={
+              Object {
+                "uri": "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg",
+              }
+            }
+            style={
+              Object {
+                "height": 750,
+                "width": "100%",
+              }
+            }
+          />
+        </View>
+        <View>
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#595959",
+                "fontSize": 10,
+                "fontWeight": "bold",
+                "margin": 10,
+              }
+            }
+          >
+            Something
+          </Text>
+        </View>
+        <View />
+      </View>
+      <View>
+        <Text
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#595959",
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "margin": 10,
+            }
+          }
+        >
+          Owned by @theCaptain420
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
