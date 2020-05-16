@@ -26,7 +26,7 @@ export default (props) => {
 const styles = StyleSheet.create({
     mainHeader: {
         alignSelf: "center",
-        color: "#595959",
+        color: "white",
         fontWeight: "bold",
         fontSize: 20,
         margin: 10,
