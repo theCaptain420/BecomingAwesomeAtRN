@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
         color:"#595959",
         fontWeight:"bold",
         fontSize:10,
-        margin:10
+        margin:10,
+        color:"darkgray"
     }
 })
