@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "react-native"
 import React from 'react';
 
 
-export default (props) => {
+export default () => {
     return(
         <View >
             <Text style={styles.mainFooter}>
@@ -13,7 +13,7 @@ export default (props) => {
 }
 const styles = StyleSheet.create({
     mainFooter: {
-        alignSelf:"center",
+        alignSelf:"flex-end",
         color:"#595959",
         fontWeight:"bold",
         fontSize:10,
