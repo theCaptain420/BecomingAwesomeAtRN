@@ -3,7 +3,7 @@ import React from 'react';
 import InstaPrinter from './instaPrinter'
 import AppHeader from '../themeComponents/AppHeader'
 
-export default ({navigation}) => {
+export default () => {
     const instaPosts=[
         {fullName:"John Johnson", shortName:"JJ", pfpColor:"red", imageURI:"https://unsplash.it/id/646/600/600", postID:"1234"},
         {fullName:"Lenny Denny", shortName:"LD", pfpColor:"green", imageURI:"https://unsplash.it/600/600", postID:"456"},

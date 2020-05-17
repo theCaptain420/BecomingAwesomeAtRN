@@ -6,7 +6,7 @@ export default (props) => {
     return(
         <View >
             <Text style={styles.mainFooter}>
-                Something
+                Comments
             </Text>
         </View>
     )
