@@ -10,7 +10,8 @@ export default StyleSheet.create({
         color:"#595959",
         fontWeight:"bold",
         fontSize:20,
-        margin:10
+        margin:10,
+        marginBottom:0
     },
     newsElementURL: {
         alignSelf:"center",
