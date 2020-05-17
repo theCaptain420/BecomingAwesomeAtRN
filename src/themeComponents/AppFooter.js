@@ -6,7 +6,7 @@ export default (props) => {
     return(
         <View >
             <Text style={styles.mainFooter}>
-                Owned by @theCaptain420
+                Made by @theCaptain420
             </Text>
         </View>
     )
@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
         color:"#595959",
         fontWeight:"bold",
         fontSize:10,
-        margin:10
+        margin:10,
+        color:"darkgray"
     },
     backgroundFooter:{
         backgroundColor:"lightgrey",
