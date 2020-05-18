@@ -11,7 +11,7 @@ export default (props) => {
             height:props.size,
             justifyContent: 'center',
             alignItems:"center",
-            justifyContent:"center",
+            justifyContent:"center"
         },
         pfpText:{
             fontWeight:"bold",
