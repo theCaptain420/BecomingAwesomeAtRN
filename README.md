@@ -1,6 +1,5 @@
 # Becoming Awesome at React Native
 Welcome to my awesome React Native project, several functions will be added everyday, not only to master it, but also to show my talent.  
-The Application will be able to fetch from a hacker news API.  
 ### Awesome stuff in this app already:  
 | Functions | notes |
 |:---:|:---:|
