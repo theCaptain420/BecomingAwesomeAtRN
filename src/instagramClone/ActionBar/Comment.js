@@ -9,9 +9,7 @@ export default (props) => {
             <Modal animationType="slide"
                 transparent={false}
                 visible={props.modalVisibility}
-                onRequestClose={() => {
-                    props.toggleModal
-                }}>
+                onRequestClose={props.toggleModal}>
 
                 <Text>
                     Comments
