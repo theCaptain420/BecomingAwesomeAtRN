@@ -1,13 +1,18 @@
 import { View, Text, StyleSheet } from "react-native"
-import React from 'react';
-
+import React, {useState} from 'react';
+import Comment from './Comment'
 
 export default () => {
+    const [modalVisible, setModalVisible] = useState(false);
+
     return(
         <View >
-            <Text style={styles.mainFooter}>
+            <Text style={styles.mainFooter} onPress={()=>setModalVisible()}>
                 Comments
             </Text>
+
+
+            <Comment modalVisibility={modalVisible} toggleModal={setModalVisible}/>
         </View>
     )
 }
