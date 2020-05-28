@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "react-native"
 import React, {useState} from 'react';
 import Comment from './Comment'
 
-export default () => {
+export default (props) => {
     const [modalVisible, setModalVisible] = useState(false);
 
     return(
@@ -12,7 +12,7 @@ export default () => {
             </Text>
 
 
-            <Comment modalVisibility={modalVisible} toggleModal={setModalVisible}/>
+            <Comment modalVisibility={modalVisible} toggleModal={setModalVisible} comments={props.comments}/>
         </View>
     )
 }

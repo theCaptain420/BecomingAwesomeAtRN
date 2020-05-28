@@ -9,7 +9,7 @@ export default (props) => {
         <View style={{flex:1, flexDirection:"column"}}>
             <InstaUser fullName={props.fullName} shortName={props.shortName} pfpColor={props.pfpColor} pfpSize={20}/>
             <InstaPicture imageURI={props.imageURI}/>
-            <InstaActionBar/>
+            <InstaActionBar comments={props.comments}/>
             <View></View>
         </View>
     )
