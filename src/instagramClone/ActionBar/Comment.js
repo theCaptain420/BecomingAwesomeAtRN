@@ -11,13 +11,13 @@ export default (props) => {
                 transparent={false}
                 visible={props.modalVisibility}
                 onRequestClose={props.toggleModal}>
-                <TextInput />
+                <TextInput value={props.currentComment} onChangeText={props.changeCurrentComment} onSubmitEditing={props.addComment} />
                 
                 <ScrollView style={{ height: "100%" }}>
                      
-                {addedComments.map(item => {
+                {props.comments.map(item => {
                         return (
-                            <Text key={item.comment} >
+                            <Text key={item.comment}>
                                 {item.comment}
                             </Text>
                         )
