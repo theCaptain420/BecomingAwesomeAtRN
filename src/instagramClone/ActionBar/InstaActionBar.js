@@ -6,6 +6,13 @@ export default (props) => {
     const [modalVisible, setModalVisible] = useState(false);
     const [comment, setComment] = useState(props.comments);
 
+
+    handleAddMoreComments=()=>{
+        
+
+    }
+
+
     return(
         <View >
             <Text style={styles.mainFooter} onPress={()=>setModalVisible()}>
