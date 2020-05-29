@@ -10,6 +10,7 @@ export default (props) => {
     const handleAddMoreComments = () => {
         if (currentComment !== "") {
             setComment(comments.concat({ comment:currentComment }))
+            setCurrentComment("")
         }
     }
 
