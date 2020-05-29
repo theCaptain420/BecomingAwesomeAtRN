@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 
 export default (props) => {
     
-    const [addedComments, addToAddedComment] = useState(props.comments)
 
     return (
         <View >
@@ -12,7 +11,7 @@ export default (props) => {
                 transparent={false}
                 visible={props.modalVisibility}
                 onRequestClose={props.toggleModal}>
-                <TextInput value={props.currentComment} onChangeText={props.setComments} onSubmitEditing={()=>{addToAddedComment(addedComments.concat("tsm"))}}/>
+                <TextInput />
                 
                 <ScrollView style={{ height: "100%" }}>
                      

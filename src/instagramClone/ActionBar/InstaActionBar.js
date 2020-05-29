@@ -4,7 +4,7 @@ import Comment from './Comment'
 
 export default (props) => {
     const [modalVisible, setModalVisible] = useState(false);
-    const [comment, setComment] = useState("test comments");
+    const [comment, setComment] = useState(props.comments);
 
     return(
         <View >
