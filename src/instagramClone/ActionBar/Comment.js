@@ -1,9 +1,10 @@
-import { View, Text, StyleSheet, Modal,ScrollView } from "react-native"
+import { View, Text, StyleSheet, Modal,ScrollView, TextInput, } from "react-native"
 import React, { useState } from 'react';
 
 
 export default (props) => {
-
+    
+    const [addedComments, addToAddedComment] = useState(props.comments)
 
     return (
         <View >
@@ -11,15 +12,21 @@ export default (props) => {
                 transparent={false}
                 visible={props.modalVisibility}
                 onRequestClose={props.toggleModal}>
-
+                <TextInput value={props.currentComment} onChangeText={props.setComments} onSubmitEditing={()=>{addToAddedComment(addedComments.concat("tsm"))}}/>
+                
                 <ScrollView style={{ height: "100%" }}>
-                    {props.comments.map(item => {
+                     
+                {addedComments.map(item => {
                         return (
-                            <Text>
+                            <Text key={item.comment} >
                                 {item.comment}
                             </Text>
                         )
                     })}
+                
+                
+                
+                
                 </ScrollView>
 
             </Modal>
