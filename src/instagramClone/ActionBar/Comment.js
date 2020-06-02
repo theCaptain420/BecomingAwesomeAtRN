@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet, Modal,ScrollView, TextInput, } from "react-native"
+import { View, Text, StyleSheet, Modal, ScrollView, TextInput, Button, } from "react-native"
 import React, { useState } from 'react';
-
+import {storeData, getData} from './asyncSavecomments'
 
 export default (props) => {
-    
+
 
     return (
         <View >
@@ -12,21 +12,31 @@ export default (props) => {
                 visible={props.modalVisibility}
                 onRequestClose={props.toggleModal}>
                 <TextInput value={props.currentComment} onChangeText={props.changeCurrentComment} onSubmitEditing={props.addComment} />
-                
+
                 <ScrollView style={{ height: "100%" }}>
-                     
-                {props.comments.map(item => {
+
+                    {props.comments.map(item => {
                         return (
                             <Text key={item.comment}>
                                 {item.comment}
                             </Text>
                         )
                     })}
-                
-                
-                
-                
                 </ScrollView>
+
+                <Button
+                    onPress={()=>storeData("tsm")}
+                    title="Save comments to storage"
+                    color="#841584"
+                    accessibilityLabel="Learn more about this purple button"
+                />
+
+                <Button
+                    onPress={()=>getData()}
+                    title="¨print comments saved"
+                    color="#841584"
+                    accessibilityLabel="Learn more about this purple button"
+                />
 
             </Modal>
         </View>
