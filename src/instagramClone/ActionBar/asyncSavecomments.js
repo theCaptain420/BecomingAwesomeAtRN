@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 async function storeData(value) {
     try {
         //turns json into string before saving, as it can only save as string.
-        const jsonValue = JSON.stringify(value)
+        const jsonValue = JSON.stringify(value)//can be removed if i dont want json and string instead.
 
         await AsyncStorage.setItem('@storage_Key', jsonValue)
     } catch (e) {
@@ -17,7 +17,7 @@ async function getData() {
         const value = await AsyncStorage.getItem('@storage_Key')
 
         //es6 to check if it isnt null, and then turns it into json
-        value != null ? JSON.parse(value) : null; 
+        value != null ? JSON.parse(value) : null;  //can be removed if i dont want json and string instead.
 
         console.log(value)
         
