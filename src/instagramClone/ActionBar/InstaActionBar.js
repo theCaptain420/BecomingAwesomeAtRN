@@ -21,7 +21,7 @@ export default (props) => {
                 Comments
             </Text>
 
-
+            
             <Comment modalVisibility={modalVisible} toggleModal={setModalVisible} comments={comments} currentComment={currentComment} changeCurrentComment={setCurrentComment} addComment={handleAddMoreComments} />
         </View>
     )
