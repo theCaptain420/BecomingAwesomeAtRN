@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import {storeData, getData} from './asyncSavecomments'
 
 export default (props) => {
-
-
     return (
         <View >
             <Modal animationType="slide"
@@ -25,14 +23,14 @@ export default (props) => {
                 </ScrollView>
 
                 <Button
-                    onPress={()=>storeData(props.comments)}
+                    onPress={()=>storeData(props.comments,'tsm')}
                     title="Save comments to storage"
                     color="#841584"
                     accessibilityLabel="Learn more about this purple button"
                 />
 
                 <Button
-                    onPress={()=>getData()}
+                    onPress={()=>getData('tsm')}
                     title="¨print comments saved"
                     color="#841584"
                     accessibilityLabel="Learn more about this purple button"
