@@ -5,7 +5,7 @@ import Comment from './Comment'
 export default (props) => {
     const [modalVisible, setModalVisible] = useState(false);
     const [comments, setComment] = useState(props.comments);
-    const [currentComment, setCurrentComment] = useState(props.comments)
+    const [currentComment, setCurrentComment] = useState()
 
     const handleAddMoreComments = () => {
         if (currentComment !== "") {
@@ -21,7 +21,7 @@ export default (props) => {
                 Comments
             </Text>
 
-            
+
             <Comment modalVisibility={modalVisible} toggleModal={setModalVisible} comments={comments} currentComment={currentComment} changeCurrentComment={setCurrentComment} addComment={handleAddMoreComments} />
         </View>
     )
