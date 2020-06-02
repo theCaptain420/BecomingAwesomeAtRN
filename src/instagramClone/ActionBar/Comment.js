@@ -25,7 +25,7 @@ export default (props) => {
                 </ScrollView>
 
                 <Button
-                    onPress={()=>storeData("tsm")}
+                    onPress={()=>storeData(props.comments)}
                     title="Save comments to storage"
                     color="#841584"
                     accessibilityLabel="Learn more about this purple button"
